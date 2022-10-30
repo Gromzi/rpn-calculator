@@ -1,0 +1,73 @@
+body {
+    margin: 0%;
+    background-color: #151F2E;
+}
+
+.calculator {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+
+    background-color: #0B1622;
+    box-sizing: border-box;
+    border: solid 4px #151F2E;
+    border-radius: 4%;
+}
+
+.panels {
+    width: 90vw;
+    height: 33vh;
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+    box-sizing: border-box;
+    border: solid 1px whitesmoke;
+    border-radius: 3%;
+}
+
+.panel {
+    width: 90vw;
+    height: 10vh;
+
+    background-color: #151F2E;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 10%;
+}
+
+.buttons {
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 1vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    border: solid 1px whitesmoke;
+    border-radius: 3%;
+}
+
+button {
+    background-color: #151F2E;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+
+.buttons > button {
+    width: 22.1vw;
+    height: 9vh;
+}
+
+#dot, #add, #subtract, #multiply, #divide {
+    font-size: larger;
+}
