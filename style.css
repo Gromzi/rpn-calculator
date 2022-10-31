@@ -33,13 +33,17 @@ body {
     border-radius: 3%;
 }
 
-.panel {
+
+
+.panels > input {
     width: 90vw;
-    height: 10vh;
+    height: 6.5vh;
+    display: block;
 
     background-color: #151F2E;
+    color: white;
     box-sizing: border-box;
-    border: solid 1px;
+    border: solid 1px black;
     border-radius: 10%;
 }
 
@@ -56,16 +60,14 @@ body {
     border-radius: 3%;
 }
 
-button {
+.buttons > button {
+    width: 22.1vw;
+    height: 9vh;
+
     background-color: #151F2E;
     color: white;
     box-sizing: border-box;
     border-radius: 10%;
-}
-
-.buttons > button {
-    width: 22.1vw;
-    height: 9vh;
 }
 
 #dot, #add, #subtract, #multiply, #divide {

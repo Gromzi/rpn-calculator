@@ -5,47 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>RPN Calculator</title>
 </head>
 <body>
     <div class="calculator">
-        <div class="panels">
-            <div class="panel" id="panel4"></div>
-            <div class="panel" id="panel3"></div>
-            <div class="panel" id="panel2"></div>
-            <div class="panel" id="panel1"></div>
+        <div class="panels">    
+            <input class="panel4-textbox" value="" readonly>        
+            <input class="panel3-textbox" value="" readonly>      
+            <input class="panel2-textbox" value="" readonly>   
+            <input class="panel1-textbox" value="" readonly>  
         </div>
     
         <div class="buttons">
-            <button id="clearAll">CC</button>
-            <button id="clear">C</button>
-            <button id="pop">POP</button>
-            <button id="modulo">%</button>
+            <button data-clear-all id="clearAll">CC</button>
+            <button data-clear id="clear">C</button>
+            <button data-operation id="pop">POP</button>
+            <button data-operation id="modulo">%</button>
 
-            <button id="switch">x &lt;-> y</button>
-            <button id="power">x^y</button>
-            <button id="factor">frac</button>
-            <button id="add">+</button>
+            <button data-operation id="switch">x &lt;-> y</button>
+            <button data-operation id="power">x^y</button>
+            <button data-operation id="factor">frac</button>
+            <button data-operation id="add">+</button>
 
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="subtract">-</button>
+            <button data-number id="seven">7</button>
+            <button data-number id="eight">8</button>
+            <button data-number id="nine">9</button>
+            <button data-operation id="subtract">-</button>
 
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="multiply">*</button>
+            <button data-number id="four">4</button>
+            <button data-number id="five">5</button>
+            <button data-number id="six">6</button>
+            <button data-operation id="multiply">*</button>
 
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="divide">/</button>
+            <button data-number id="one">1</button>
+            <button data-number id="two">2</button>
+            <button data-number id="three">3</button>
+            <button data-operation id="divide">/</button>
 
-            <button id="zero">0</button>
-            <button id="dot">.</button>
-            <button id="enter">ENTER</button>
-            <button id="sum">p + g</button>
+            <button data-number id="zero">0</button>
+            <button data-operation id="dot">.</button>
+            <button data-operation id="enter">ENTER</button>
+            <button data-operation id="sum">p + g</button>
         </div>
     </div>
 
