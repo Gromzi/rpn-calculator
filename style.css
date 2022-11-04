@@ -34,23 +34,25 @@ body {
 }
 
 
-
 .panels > input {
     width: 90vw;
     height: 6.5vh;
     display: block;
+
+    text-align: right;
 
     background-color: #151F2E;
     color: white;
     box-sizing: border-box;
     border: solid 1px black;
     border-radius: 10%;
+    font-size: 30px;
 }
 
 .buttons {
     width: 90vw;
     height: 60vh;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +62,11 @@ body {
     border-radius: 3%;
 }
 
+/* .break {
+    flex-basis: 100%;
+    height: 0;
+} */
+
 .buttons > button {
     width: 22.1vw;
     height: 9vh;
@@ -68,8 +75,64 @@ body {
     color: white;
     box-sizing: border-box;
     border-radius: 10%;
+    font-size: 15px;
 }
 
 #dot, #add, #subtract, #multiply, #divide {
-    font-size: larger;
+    font-size: 25px;
+}
+
+@media (orientation: landscape) {
+    .calculator {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .panels {
+        margin: 0%;
+        width: 40vw;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .panels > input {
+        width: 40vw;
+        height: 20vh;
+        display: block;
+    
+        text-align: right;
+    
+        background-color: #151F2E;
+        color: white;
+        box-sizing: border-box;
+        border: solid 1px black;
+        border-radius: 10%;
+
+        font-size: 35px;
+    }
+
+    .buttons {
+        width: 50vw;
+        height: 80vh;
+        margin-bottom: 0;
+    
+        display: flex;
+        flex-wrap: wrap;
+    
+        box-sizing: border-box;
+        border: solid 1px whitesmoke;
+        border-radius: 3%;
+    }
+
+    .buttons > button {
+        width: 12.4vw;
+        height: 13vh;
+    
+        background-color: #151F2E;
+        color: white;
+        box-sizing: border-box;
+        border-radius: 10%;
+    }
 }
