@@ -1,60 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl_PL">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="frac.js" defer></script>
     <title>RPN Calculator</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="calculator">
-        <div class="panels">    
-            <input id="panel4-textbox" value="" readonly>        
-            <input id="panel3-textbox" value="" readonly>      
-            <input id="panel2-textbox" value="" readonly>   
-            <input id="panel1-textbox" value="" readonly>  
+        <div class="panels">
+            <div id="panel4-textbox"></div>
+            <div id="panel3-textbox"></div>
+            <div id="panel2-textbox"></div>
+            <div id="panel1-textbox"> </div>
         </div>
     
         <div class="buttons">
             <button data-clear-all id="clearAll">CC</button>
             <button data-clear id="clear">C</button>
-            <button data-operation id="pop">POP</button>
-            <button data-operation id="modulo">%</button>
+            <button data-pop id="pop">POP</button>
+            <button data-modulo id="modulo">MOD</button>
             <!-- <div class="break"></div> -->
 
-            <button data-operation id="switch">x &lt;-> y</button>
-            <button data-operation id="power">x^y</button>
-            <button data-operation id="factor">frac</button>
-            <button data-operation id="add">+</button>
+            <button data-swap id="swap">x &lt;-> y</button>
+            <button data-power id="power">x^y</button>
+            <button data-frac id="frac">frac</button>
+            <button data-add id="add">+</button>
             <!-- <div class="break"></div> -->
 
             <button data-number id="seven">7</button>
             <button data-number id="eight">8</button>
             <button data-number id="nine">9</button>
-            <button data-operation id="subtract">-</button>
+            <button data-subtract id="subtract">-</button>
             <!-- <div class="break"></div> -->
 
             <button data-number id="four">4</button>
             <button data-number id="five">5</button>
             <button data-number id="six">6</button>
-            <button data-operation id="multiply">*</button>
+            <button data-multiply id="multiply">*</button>
             <!-- <div class="break"></div> -->
 
             <button data-number id="one">1</button>
             <button data-number id="two">2</button>
             <button data-number id="three">3</button>
-            <button data-operation id="divide">/</button>
+            <button data-divide id="divide">/</button>
             <!-- <div class="break"></div> -->
 
             <button data-number id="zero">0</button>
-            <button data-operation id="dot">.</button>
-            <button data-operation id="enter">ENTER</button>
-            <button data-operation id="sum">p + g</button>
+            <button data-dot id="dot">.</button>
+            <button data-enter id="enter">ENTER</button>
+            <button data-sum id="sum">p + g</button>
         </div>
     </div>
 
-    
+    \({}\)
 </body>
 </html>
