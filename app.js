@@ -65,12 +65,16 @@ stack.power = function () {
     let y = this.shift();
     this.unshift(Math.pow(x,y));
 }
-stack.frac =  function () {
-    console.log(generatePrimeFactors(this[0]));
-    var content = "$${{ -b \\pm \\sqrt {{b^2} - 4ac}} \\over {2a}}$$";
-    // panel1.innerHTML = content
-    console.log("alala");
-    MathJax.Hub.queue(["Text",panel1,content]);
+stack.frac = function () {
+    // console.log(generatePrimeFactors(this[0]));
+    // var content = "$${{ -b \\pm \\sqrt {{b^2} - 4ac}} \\over {2a}}$$";
+    // // panel1.innerHTML = content
+    // console.log("alala");
+    // MathJax.Hub.queue(["Text",panel1,content]);
+
+    let panel1 = document.getElementById("panel1-textbox"); 
+    panel1.innerHTML="\\({{a}_{x}}=\\frac{\\,d^2 z}{\\,dt^2}\\)";
+    MathJax.typeset();
 }
 stack.mod =  function () {
     let x = this.shift();
@@ -156,9 +160,10 @@ powerButton.addEventListener('click', () => {
 
 // Frac Button
 fracButton.addEventListener('click', () => {
-    if (panel1.innerHTML !== "") {
-        stack.frac();
-    }
+    // if (panel1.innerHTML !== "") {
+    //     stack.frac();
+    // }
+    stack.frac();
 })
 
 // Mod Button

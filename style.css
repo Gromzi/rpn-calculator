@@ -101,10 +101,12 @@ body {
         justify-content: center;
     }
 
-    .panels > input {
+    .panels > div {
         width: 40vw;
         height: 20vh;
-        display: block;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     
         text-align: right;
     
