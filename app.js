@@ -227,8 +227,10 @@ powerButton.addEventListener('click', () => {
 
 // Frac Button
 fracButton.addEventListener('click', () => {
-    stack.frac();
-    panel1ShouldUnshift = true;
+    if (panel1.innerHTML !== "") {
+        stack.frac();
+        panel1ShouldUnshift = true;
+    }
 })
 
 // Mod Button
