@@ -86,6 +86,10 @@ body {
     font-size: 25px;
 }
 
+#enter{
+    width: 44.2vw;
+}
+
 @media (orientation: landscape) {
     .calculator {
         flex-direction: row;
@@ -140,5 +144,9 @@ body {
         color: white;
         box-sizing: border-box;
         border-radius: 10%;
+    }
+    
+    #enter{
+        width: 24.8vw;
     }
 }
