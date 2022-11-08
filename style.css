@@ -1,13 +1,21 @@
+html,
 body {
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 100%;
+ 
     background-color: #151F2E;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .calculator {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -15,7 +23,6 @@ body {
     gap: 5vh;
 
     background-color: #0B1622;
-    box-sizing: border-box;
     border: solid 4px #151F2E;
     border-radius: 4%;
 }
@@ -30,7 +37,6 @@ body {
     align-items: center;
     gap: 2vh;
 
-    box-sizing: border-box;
     border: solid 1px whitesmoke;
     border-radius: 3%;
 }
@@ -48,7 +54,6 @@ body {
 
     background-color: #151F2E;
     color: white;
-    box-sizing: border-box;
     border: solid 1px black;
     border-radius: 10%;
     font-size: 30px;
@@ -63,15 +68,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    box-sizing: border-box;
     border: solid 1px whitesmoke;
     border-radius: 3%;
 }
-
-/* .break {
-    flex-basis: 100%;
-    height: 0;
-} */
 
 .buttons > button {
     width: 22.1vw;
@@ -79,7 +78,6 @@ body {
 
     background-color: #151F2E;
     color: white;
-    box-sizing: border-box;
     border-radius: 10%;
     font-size: 15px;
 }
@@ -118,7 +116,6 @@ body {
     
         background-color: #151F2E;
         color: white;
-        box-sizing: border-box;
         border: solid 1px black;
         border-radius: 10%;
 
@@ -133,7 +130,6 @@ body {
         display: flex;
         flex-wrap: wrap;
     
-        box-sizing: border-box;
         border: solid 1px whitesmoke;
         border-radius: 3%;
     }
@@ -144,7 +140,6 @@ body {
     
         background-color: #151F2E;
         color: white;
-        box-sizing: border-box;
         border-radius: 10%;
     }
     
