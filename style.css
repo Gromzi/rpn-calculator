@@ -20,7 +20,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vh;
+    justify-content: center;
+    gap: 4vh;
 
     background-color: #0B1622;
     border: solid 4px #151F2E;
@@ -30,7 +31,6 @@ body {
 .panels {
     width: 90vw;
     height: 33vh;
-    margin-top: 5vh;
 
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ body {
 
 .panels > div {
     width: 90vw;
-    height: 6.5vh;
+    height: 7vh;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -62,8 +62,8 @@ body {
 
 .buttons {
     width: 90vw;
-    height: 60vh;
-    margin-bottom: 5vh;
+    height: 45vh;
+    /* margin-bottom: 5vh; */
 
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +74,7 @@ body {
 
 .buttons > button {
     width: 22.1vw;
-    height: 9vh;
+    height: 7vh;
 
     background-color: #151F2E;
     color: white;
@@ -99,15 +99,13 @@ body {
     }
 
     .panels {
-        margin: 0%;
         width: 40vw;
-        height: 80vh;
-        justify-content: center;
+        height: 65vh;
     }
 
     .panels > div {
         width: 40vw;
-        height: 20vh;
+        height: 15vh;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -124,7 +122,7 @@ body {
 
     .buttons {
         width: 50vw;
-        height: 80vh;
+        height: 65vh;
         margin-bottom: 0;
     
         display: flex;
@@ -136,7 +134,7 @@ body {
 
     .buttons > button {
         width: 12.4vw;
-        height: 13vh;
+        height: 10.5vh;
     
         background-color: #151F2E;
         color: white;
